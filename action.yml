@@ -1,0 +1,11 @@
+name: "Simple concatenate YAML files action"
+description: "Append YAML files to a single one using a prefix"
+author: aorfanos
+runs:
+  using: "composite"
+  steps:
+    - run: python ${{ github.action_path }}/concat-yaml.py
+      shell: bash
+branding:
+  color: green
+  icon: cloud
